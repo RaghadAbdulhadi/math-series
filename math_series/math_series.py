@@ -64,6 +64,6 @@ def sum_series(n, start_num = 0, second_num = 1):
         elif n == 1:
             return second_num
         else:
-            return sum_series(n - 1) + sum_series(n - 2)
+            return sum_series(n - 1, start_num, second_num) + sum_series(n - 2, start_num, second_num)
     except:
         print("TypeError: The input should be an integer")

@@ -168,7 +168,7 @@ def test_sum02():
 
 def test_sum03():
     actual = sum_series(5, 2, 1)
-    expected = 5
+    expected = 11
     assert actual == expected
 
 def test_type_error():
